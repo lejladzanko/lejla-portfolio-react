@@ -73,7 +73,7 @@ const About = () => {
             <div className="content">
               <p>
                 Hi there! 👋 I'm Lejla (pronounced Leyla), a junior front-end
-                developer based in Madrid 🇪🇸. My love for languages has led me
+                developer & translator based in Madrid 🇪🇸. My love for languages has led me
                 to become fluent in Bosnian/Croatian/Serbian, English, and
                 Spanish. While I originally studied translation and English, I
                 recently discovered a new passion for web development.
@@ -92,7 +92,7 @@ const About = () => {
               <p>
                 Outside of coding, I enjoy everything floral 🌸, love vibrant
                 colors, and am an avid traveler and collector of handmade
-                souvenirs. I also enjoy cooking, and jazz music. 
+                souvenirs. I also enjoy cooking and jazz music. 
               </p>
               <p>
                 Please take a look at my Projects section to see what I've been

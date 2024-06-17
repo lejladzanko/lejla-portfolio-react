@@ -51,7 +51,7 @@ const webProjects = [
     id: "pawsome-cards",
     title: "Pawsome Profile Cards",
     description:
-      "A JavaScript website with which you can create your own business card and share it on Twitter",
+      "A JavaScript website with which you can create your own business card and share it on Twitter.",
     image: Pawsome,
     website: "https://victoriagz.github.io/project-promo-w-module-2-team-3/",
     github: "https://github.com/lejladzanko/project-promo-w-module-2-team-3",
@@ -61,7 +61,7 @@ const webProjects = [
     id: "proyectos-paintones",
     title: "Proyectos Paintones",
     description:
-      "A React website with which you can create your own project card",
+      "A React website with which you can create your own project card.",
     image: Paintones,
     website: "https://lejladzanko.github.io/project-promo-W-module-3-team-2/",
     github: "https://github.com/lejladzanko/project-promo-W-module-3-team-2",
@@ -71,7 +71,7 @@ const webProjects = [
     id: "guess-the-number",
     title: "Guess the number",
     description:
-      "A JavaScript game in which you have to guess the number with the help of hints",
+      "A JavaScript game in which you have to guess the number with the help of hints.",
     image: GuesstheNumber,
     website: "https://lejladzanko.github.io/AdivinaElNumero/",
     github: "https://github.com/lejladzanko/AdivinaElNumero",
@@ -98,14 +98,14 @@ const translationProjects = [
   {
     id: "child-book-1",
     title: "Vjeverica ne zna reći ne",
-    description: "Original Title: La ardilla no sabe decir que no by Susana Isern",
+    description: "Original Title: Ardilla no sabe decir que no by Susanna Isern",
     image: Vjeverica,
     purchaseLink: "https://buybook.ba/proizvod/vjeverica-ne-zna-reci-ne-5644",
   },
   {
     id: "child-book-2",
     title: "Rakun uvijek želi biti prvi",
-    description: "Original Title: El mapache siempre quiere ser el primero by Susana Isern",
+    description: "Original Title: Mapache quiere ser el primero by Susanna Isern",
     image: Rakun,
     purchaseLink:
       "https://buybook.ba/proizvod/rakun-uvijek-zeli-biti-prvi-5645",
@@ -114,7 +114,7 @@ const translationProjects = [
   {
     id: "child-book-3",
     title: "Lisac lažljivac",
-    description: "Original Title: El zorro dice mentiras by Susana Isern",
+    description: "Original Title: Zorro dice mentiras by Susanna Isern",
     image: Lisac,
     purchaseLink: "https://buybook.ba/proizvod/lisac-lazljivac-5646",
   },
