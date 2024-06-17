@@ -1,14 +1,79 @@
 #projects {
   padding: 2rem;
   background-color: #f7f7f78e;
+  background-image: linear-gradient(rgba(68, 76, 247, 0.1) 1px, transparent 1px), 
+                    linear-gradient(to right, rgba(68, 76, 247, 0.1) 1px, #f7f7f78e 1px);
+  background-size: 20px 20px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin: 2rem auto;
+  margin-top: 3rem;
   max-width: 1200px;
+  text-align: center; 
+  position: relative;
+
+  .washitape2 {
+    position: absolute;
+    top: -110px;
+    right: -105px;
+    width: 300px;
+    height: auto;
+    transform: rotate(30deg);
+    z-index: 10;
+  }
 
   h2 {
     font-size: 3.5rem;
     color: #333;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+
+  .btn {
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25rem;
+    line-height: 23px;
+    outline: none;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    &.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .project-card {
@@ -17,6 +82,10 @@
     overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
 
     &:hover {
       transform: translateY(-10px);
@@ -52,6 +121,7 @@
         a {
           color: #333;
           transition: color 0.3s ease-in-out;
+          margin: 0 0.5rem;
 
           &:hover {
             color: #007bff;

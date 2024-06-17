@@ -26,7 +26,7 @@ const Navbar = () => {
             <li className="nav-item">
               <Link
                 className="nav-link"
-                to="about"
+                to="profile"
                 smooth={true}
                 duration={500}
                 onClick={toggleMenu}

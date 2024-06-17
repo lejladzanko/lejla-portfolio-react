@@ -1,27 +1,28 @@
 .footer {
   background-color: #5688C7;
   color: #fff;
+  padding: 2rem 0;
+  text-align: center;
 
-  .social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .container {
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-    a {
-      color: #fff;
-      transition: color 0.3s ease-in-out;
+      a {
+        color: #fff;
+        transition: color 0.3s ease-in-out;
 
-      &:hover {
-        color: black;
+        &:hover {
+          color: rgba(60, 107, 162, 0.786);
+        }
       }
     }
-  }
 
-  p {
-    margin-top: 1rem;
-    font-size: 1rem;
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
   }
 }
-
-
-
