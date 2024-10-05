@@ -38,7 +38,7 @@ const About = () => {
         </div>
         <div className="section__text">
           <h1 className="title">Lejla Dzanko</h1>
-          <p className="subtitle">Front-end Developer & Translator</p>
+          <p className="subtitle">Translator & Front-End Developer</p>
         </div>
       </div>
       <div className="profile-content">
@@ -72,34 +72,17 @@ const About = () => {
           {activeTab === "bio" && (
             <div className="content">
               <p>
-                Hi there! 👋 I'm Lejla (pronounced Leyla), a junior front-end
-                developer & translator based in Madrid 🇪🇸. My love for languages has led me
-                to become fluent in Bosnian/Croatian/Serbian, English, and
-                Spanish. While I originally studied translation and English, I
-                recently discovered a new passion for web development.
+              Hi there! 👋 I'm Lejla (pronounced Leyla), a passionate Translator & Junior Front-End Developer based in Madrid 🇪🇸. My love for languages and cultures has led me to become fluent in Bosnian/Croatian/Serbian, English, and Spanish. I originally studied translation, and I’m excited to weave my linguistic expertise into the realm of technology.
               </p>
               <p>
-                Although I'm new to the field, I've been dedicatedly learning
-                HTML, CSS, and JavaScript, and have been particularly drawn to
-                React for building interactive user interfaces. I'm enthusiastic
-                about creating visually appealing and user-friendly websites,
-                and I'm eager to bring my skills into a professional setting. I
-                may not have formal work experience in web development yet, but
-                I'm confident in my abilities and committed to continuous
-                learning and growth. My portfolio includes personal projects
-                that showcase my progress and passion for front-end development.
+              I have a strong foundation in translation and recently completed a Google AI course focused on generative AI, where I also learned about the fascinating intersection of translation and technology. I'm particularly interested in how AI can enhance the translation process, making it more efficient and accessible.
               </p>
               <p>
-                Outside of coding, I enjoy everything floral 🌸, love vibrant
-                colors, and am an avid traveler and collector of handmade
-                souvenirs. I also enjoy cooking and jazz music. 
+              Although I'm still on my journey in web development, I'm dedicated to learning HTML, CSS, and JavaScript, with a keen interest in React for creating interactive user interfaces. My portfolio features personal projects that showcase my growth and enthusiasm for both translation and technology.
               </p>
+              <p>When I'm not coding or translating, you'll find me exploring floral patterns 🌸, soaking up vibrant colors, and traveling the world to collect unique handmade souvenirs. I also love to cook and enjoy relaxing to jazz music.</p>
               <p>
-                Please take a look at my Projects section to see what I've been
-                working on. I'm excited to connect with potential collaborators
-                or employers who can help me kickstart my career in web
-                development. Let's connect and create something wonderful
-                together!
+              Feel free to check out my Projects section to see what I've been working on. I'm excited to connect with fellow language lovers, collaborators, and potential employers who share my passion for translation and technology. 
               </p>
             </div>
           )}
@@ -121,6 +104,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faLanguage} size="2x" />
                 <p>Translation</p>
               </div>
+          
             </div>
           )}
           {activeTab === "interests" && (

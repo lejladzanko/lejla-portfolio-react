@@ -11,8 +11,8 @@ import Rakun from "../images/rakun_cover.jpeg";
 import Lisac from "../images/lisac_cover.jpeg";
 import Poljekruški from "../images/PoljeKruski.jpg";
 import Crnileptiri from "../images/crnileptiri_cover.jpeg";
+import PiedraPermanece from "../images/piedra_cover.jpeg";
 import WashiTape from "../images/washitape2.png";
-
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -80,43 +80,52 @@ const webProjects = [
 
 const translationProjects = [
   {
-    id: "adult-book-1",
-    title: "Polje kruški",
-    description: "Original Title: The Pear Field by Nana Ekvtimishvili",
-    image: Poljekruški,
-    purchaseLink: "https://buybook.ba/proizvod/polje-kruski-5301",
+    id: "adult-book-3",
+    title: "La piedra permanece",
+    description: "Original Title: La piedra permanece by Marc Casals",
+    image: PiedraPermanece, 
+    purchaseLink: "https://www.librosdelko.com/products/la-piedra-permanece", 
+    translationInfo: "Currently translating from Spanish to Bosnian",
   },
-
   {
     id: "adult-book-2",
     title: "Crni leptiri",
     description: "Original Title: Black Butterflies by Priscilla Morris",
     image: Crnileptiri,
     purchaseLink: "https://buybook.ba/proizvod/crni-leptiri-5643",
+    translationInfo: "Translated from English to Bosnian, 2023",
   },
-
+  {
+    id: "adult-book-1",
+    title: "Polje kruški",
+    description: "Original Title: The Pear Field by Nana Ekvtimishvili",
+    image: Poljekruški,
+    purchaseLink: "https://buybook.ba/proizvod/polje-kruski-5301",
+    translationInfo: "Translated from English to Bosnian, 2022",
+  },
   {
     id: "child-book-1",
     title: "Vjeverica ne zna reći ne",
     description: "Original Title: Ardilla no sabe decir que no by Susanna Isern",
     image: Vjeverica,
     purchaseLink: "https://buybook.ba/proizvod/vjeverica-ne-zna-reci-ne-5644",
+    translationInfo: "Translated from English to Bosnian, 2023",
   },
   {
     id: "child-book-2",
     title: "Rakun uvijek želi biti prvi",
     description: "Original Title: Mapache quiere ser el primero by Susanna Isern",
     image: Rakun,
-    purchaseLink:
-      "https://buybook.ba/proizvod/rakun-uvijek-zeli-biti-prvi-5645",
+    purchaseLink: "https://buybook.ba/proizvod/rakun-uvijek-zeli-biti-prvi-5645",
+    translationInfo: "Translated from Spanish to Bosnian, 2023",
   },
-
   {
     id: "child-book-3",
     title: "Lisac lažljivac",
     description: "Original Title: Zorro dice mentiras by Susanna Isern",
     image: Lisac,
     purchaseLink: "https://buybook.ba/proizvod/lisac-lazljivac-5646",
+    translationInfo: "Translated from Spanish to Bosnian, 2023",
   },
 ];
 
@@ -134,7 +143,7 @@ const Projects = () => {
           }`}
           onClick={() => setActiveTab("web")}
         >
-          Web Projects
+          Web 
         </button>
         <button
           className={`btn btn-primary mx-2 ${
@@ -142,7 +151,7 @@ const Projects = () => {
           }`}
           onClick={() => setActiveTab("translation")}
         >
-          Translation Projects
+          Translation 
         </button>
       </div>
       <div className="row">
@@ -196,12 +205,13 @@ const Projects = () => {
                 >
                   <img
                     src={project.image}
-                    className="card-img-top"
+                    className={`card-img-top ${project.id === "adult-book-3" || project.id === "adult-book-2" ? 'adjusted-size' : ''}`} // Adjusted class for specific images
                     alt={project.title}
                   />
                   <div className="card-body">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.description}</p>
+                    <small>{project.translationInfo}</small>
                   </div>
                 </a>
               </div>

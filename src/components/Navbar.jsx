@@ -18,10 +18,12 @@ const Navbar = () => {
         <a className="navbar-brand" href="#">
           <img src={logo} alt="Lejla Dzanko" className="navbar-logo" />
         </a>
+        {/* Toggle Button */}
         <button className="navbar-toggler" type="button" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </button>
-        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}>
+        {/* Navbar Links */}
+        <div className={`navbar-collapse ${isOpen ? 'show' : ''}`}>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link
