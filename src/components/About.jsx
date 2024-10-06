@@ -148,7 +148,7 @@ const About = () => {
         <div className="btn-container">
           <button
             className="btn-download-cv"
-            onClick={() => window.open("./public/DzankoLejla-CV.pdf")}
+            onClick={() => window.open("/DzankoLejla-CV.pdf")}
           >
             Download CV
           </button>
