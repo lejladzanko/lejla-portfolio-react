@@ -15,8 +15,8 @@
     align-items: center;
 
     .navbar-logo {
-      height: 250px; /* Keep the original size */
-      margin-top: 40px; /* Maintain the margin from before */
+      height: 250px;
+      margin-top: 40px; 
     }
   }
 
@@ -25,17 +25,16 @@
     font-size: 1.5rem;
     outline: none;
     cursor: pointer;
-    position: absolute; /* Fix position of the hamburger menu */
-    right: 20px; /* Keeps it fixed on the right side */
+    position: absolute; 
+    right: 20px;
   }
 
   .navbar-collapse {
-    display: none; /* Hide the menu by default */
-    
+    display: none; 
     &.show {
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center menu items */
+      align-items: center; 
     }
   }
 

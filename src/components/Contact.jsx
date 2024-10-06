@@ -5,33 +5,33 @@ import smileySticker from '../images/smiley.png';
 import '../scss/Contact.scss';
 
 const Contact = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track if the form is submitted
+  const [isSubmitted, setIsSubmitted] = useState(false); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
-  }); // State to track form data
+  }); 
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value, // Update form data state
+      [e.target.name]: e.target.value, 
     });
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
     const response = await fetch("https://formspree.io/f/myzygwol", {
       method: "POST",
       headers: {
-        "Accept": "application/json", // Specify that we expect JSON response
+        "Accept": "application/json", 
       },
-      body: JSON.stringify(formData), // Send form data as JSON
+      body: JSON.stringify(formData), 
     });
 
     if (response.ok) {
-      setIsSubmitted(true); // Update state to reflect successful submission
-      setFormData({ name: '', email: '', message: '' }); // Reset form data
+      setIsSubmitted(true); 
+      setFormData({ name: '', email: '', message: '' }); 
     }
   };
 
@@ -40,7 +40,7 @@ const Contact = () => {
       <h2 className="text-center mb-5">Say Hi! 👋</h2>
       <div className="contact-form">
         {isSubmitted ? (
-          <p>Thank you for your message! I'll get back to you soon.</p> // Show a thank-you message upon submission
+          <p>Thank you for your message! I'll get back to you soon.</p> 
         ) : (
           <form onSubmit={handleSubmit}>
             <input

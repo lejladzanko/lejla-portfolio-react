@@ -10,6 +10,7 @@
   max-width: 1200px;
   text-align: center; 
   position: relative;
+  
 
   .washitape2 {
     position: absolute;
@@ -86,6 +87,7 @@
     text-decoration: none;
     color: inherit;
     position: relative;
+    background-color: #f0f0f0;
 
     &:hover {
       transform: translateY(-10px);
@@ -93,8 +95,10 @@
     }
 
     .card-img-top {
-      height: 200px;
-      object-fit: cover;
+      height: 200px; 
+      object-fit: contain; 
+      width: 100%; 
+      margin-top: 1rem;
     }
 
     .card-body {
@@ -132,21 +136,20 @@
   }
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   #projects {
-    max-width: 90%; /* Adjust max-width for smaller screens */
+    max-width: 90%; 
   }
 
   .washitape2 {
-    display: none; /* Temporarily hide for testing */
+    display: none; 
   }
 
   .btn {
-    padding: 1rem 2rem; /* Increase padding for larger touch target */
+    padding: 1rem 2rem; 
   }
 
   .row {
-    margin: 0; /* Remove margin to prevent layout issues */
+    margin: 0; 
   }
 }

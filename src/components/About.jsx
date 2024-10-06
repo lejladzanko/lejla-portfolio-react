@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="section__text">
           <h1 className="title">Lejla Dzanko</h1>
-          <p className="subtitle">Translator & Product Manager</p>
+          <p className="subtitle">Translator | Product Manager | Front-End</p>
         </div>
       </div>
       <div className="profile-content">

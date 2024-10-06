@@ -2,36 +2,34 @@
 @import 'core/variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
-
 body {
-    font-family: 'Libre Baskerville', serif;
-    // background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    transition: background-color var(--transition-ease), color var(--transition-ease);
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-color);
-  }
-  
-  a {
-    color: var(--primary-color);
-    text-decoration: none;
-  
-    &:hover {
-      color: var(--secondary-color);
-    }
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
+  font-family: 'Libre Baskerville', serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  transition: background-color var(--transition-ease), color var(--transition-ease);
+}
 
-  /* App Load Animation */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -43,4 +41,56 @@ body {
 
 .app {
   animation: fadeIn 1s ease-in-out;
+}
+
+#projects {
+  padding: 2rem;
+  background-color: #f7f7f78e;
+  background-image: linear-gradient(rgba(68, 76, 247, 0.1) 1px, transparent 1px), 
+                    linear-gradient(to right, rgba(68, 76, 247, 0.1) 1px, #f7f7f78e 1px);
+  background-size: 20px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+  max-width: 100%; 
+  text-align: center; 
+  position: relative;
+  padding: 0 1rem; 
+}
+
+.washitape2 {
+  position: absolute;
+  top: -110px;
+  right: -105px;
+  width: 300px;
+  height: auto;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  #projects {
+    max-width: 90%; 
+  }
+
+  .washitape2 {
+    display: none; 
+  }
+
+  .btn {
+    padding: 1rem 2rem; 
+  }
+
+  .row {
+    margin: 0; 
+  }
 }

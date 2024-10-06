@@ -9,8 +9,8 @@ import GuesstheNumber from "../images/guessthenumber.png";
 import Vjeverica from "../images/vjeverica_cover.jpeg";
 import Rakun from "../images/rakun_cover.jpeg";
 import Lisac from "../images/lisac_cover.jpeg";
-import Poljekruški from "../images/PoljeKruski.jpg";
-import Crnileptiri from "../images/crnileptiri_cover.jpeg";
+import Poljekruški from "../images/PoljeKruski.png";
+import Crnileptiri from "../images/crnileptiri_cover.png";
 import PiedraPermanece from "../images/piedra_cover.jpeg";
 import WashiTape from "../images/washitape2.png";
 
