@@ -70,8 +70,7 @@ const About = () => {
             <div className="content">
               <p>
                 Hi there! 👋 I'm Lejla (pronounced Leyla), a passionate
-                Translator & Product Manager based in Madrid 🇪🇸. My
-                love for languages and cultures has led me to become fluent in
+                Translator, Product Manager & Front-End Developer (I have too many interests and a love for learning, so I decided to juggle all three!) based in Madrid 🇪🇸. My love for languages and cultures has led me to become fluent in
                 Bosnian/Croatian/Serbian, English, and Spanish. I originally
                 studied translation, and I’m excited to weave my linguistic
                 expertise into the realm of technology and digital product management.
@@ -148,7 +147,7 @@ const About = () => {
         <div className="btn-container">
           <button
             className="btn-download-cv"
-            onClick={() => window.open("/DzankoLejla-CV.pdf")}
+            onClick={() => window.open("/DzankoLejla_CV.pdf")}
           >
             Download CV
           </button>
