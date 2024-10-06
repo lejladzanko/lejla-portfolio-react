@@ -66,7 +66,7 @@
 
     &:hover {
       box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
-  transform: translate3d(0, 2px, 0);
+      transform: translate3d(0, 2px, 0);
     }
   }
 
@@ -129,5 +129,24 @@
         }
       }
     }
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #projects {
+    max-width: 90%; /* Adjust max-width for smaller screens */
+  }
+
+  .washitape2 {
+    display: none; /* Temporarily hide for testing */
+  }
+
+  .btn {
+    padding: 1rem 2rem; /* Increase padding for larger touch target */
+  }
+
+  .row {
+    margin: 0; /* Remove margin to prevent layout issues */
   }
 }
