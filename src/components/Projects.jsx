@@ -205,7 +205,7 @@ const Projects = () => {
                 >
                   <img
                     src={project.image}
-                    className={`card-img-top ${project.id === "adult-book-3" || project.id === "adult-book-2" ? 'adjusted-size' : ''}`} // Adjusted class for specific images
+                    className={`card-img-top ${project.id === "adult-book-3" || project.id === "adult-book-2" ? 'adjusted-size' : ''}`} 
                     alt={project.title}
                   />
                   <div className="card-body">
