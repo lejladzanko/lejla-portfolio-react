@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="section__text">
           <h1 className="title">Lejla Dzanko</h1>
-          <p className="subtitle">Translator | Product Manager | Front-End</p>
+          <p className="subtitle">Translator | Product Manager | Front-End Developer</p>
         </div>
       </div>
       <div className="profile-content">
@@ -103,16 +103,16 @@ const About = () => {
           {activeTab === "skills" && (
             <div className="skills-content">
               <div className="skill">
-                <FontAwesomeIcon icon={faCode} size="2x" />
-                <p>Web Programming</p>
-              </div>
-              <div className="skill">
                 <FontAwesomeIcon icon={faLanguage} size="2x" />
                 <p>Translation & Localization</p>
               </div>
               <div className="skill">
                 <FontAwesomeIcon icon={faBrain} size="2x" />
                 <p>AI & Machine Learning</p>
+              </div>
+              <div className="skill">
+                <FontAwesomeIcon icon={faCode} size="2x" />
+                <p>Web Programming</p>
               </div>
               <div className="skill">
                 <FontAwesomeIcon icon={faTasks} size="2x" />
